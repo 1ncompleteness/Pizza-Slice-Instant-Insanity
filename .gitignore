@@ -1,0 +1,80 @@
+# Environment files
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# LaTeX auxiliary and build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.log
+*.fdb*
+*.synctex*
+*.cb
+*.cb2
+*.brf
+*.end
+*.spl
+*.xdv
+*.xmpi
+
+# BibTeX / Biber
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*-blx.aux
+*-blx.bib
+
+# LaTeX output formats
+*.dvi
+*.ps
+
+# Beamer
+*.vrb
+
+# Index and glossary
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.ist
+*.acn
+*.acr
+*.alg
+
+# Nomenclature
+*.nlg
+*.nlo
+*.nls
+
+# List of figures, tables, listings
+*.lof
+*.lot
+*.lol
+
+# Minitoc
+*.maf
+*.mtc*
+
+# Other LaTeX packages
+*.pdfsync
+*.tdo
+*.xdy
+*.xyc
+*.pytxcode
+
+# Latexmk
+*.fdb_latexmk
