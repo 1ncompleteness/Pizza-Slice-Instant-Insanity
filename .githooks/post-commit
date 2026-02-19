@@ -1,0 +1,9 @@
+#!/bin/bash
+# After committing in a submodule, update the parent repo's pointer
+SUBMODULE_DIR=$(basename "$(git rev-parse --show-toplevel)")
+PARENT_DIR=$(git rev-parse --show-superproject-working-tree 2>/dev/null)
+
+if [ -n "$PARENT_DIR" ]; then
+  git -C "$PARENT_DIR" add "$SUBMODULE_DIR"
+  git -C "$PARENT_DIR" commit -m "chore($SUBMODULE_DIR): update submodule to latest commit"
+fi
